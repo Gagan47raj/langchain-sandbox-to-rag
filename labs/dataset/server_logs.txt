@@ -1,0 +1,24 @@
+2026-06-28 10:15:23.456 INFO [user-service] [http-nio-8080-exec-1] --- Authentication successful for user john.doe@email.com
+2026-06-28 10:15:24.789 DEBUG [user-service] [http-nio-8080-exec-1] --- Database query executed in 45ms: SELECT * FROM users WHERE email = 'john.doe@email.com'
+2026-06-28 10:15:25.012 WARN [user-service] [http-nio-8080-exec-2] --- Rate limit approaching: current=850, limit=1000 for IP 192.168.1.45
+2026-06-28 10:15:26.345 ERROR [order-service] [http-nio-8080-exec-3] --- Failed to process order #ORD-12345: Payment gateway timeout
+java.net.SocketTimeoutException: Read timed out
+    at java.net.SocketInputStream.socketRead0(Native Method)
+    at com.example.payment.PaymentService.processPayment(PaymentService.java:67)
+2026-06-28 10:15:27.678 INFO [order-service] [http-nio-8080-exec-4] --- Order #ORD-12346 created successfully for user alice@company.com
+2026-06-28 10:15:28.901 DEBUG [notification-service] [scheduling-1] --- Sending email notification to user bob@example.com: Order shipped
+2026-06-28 10:15:29.234 WARN [auth-service] [http-nio-8080-exec-5] --- JWT token validation failed for user charlie@test.org - Token expired
+2026-06-28 10:15:30.567 ERROR [payment-service] [http-nio-8080-exec-6] --- Payment declined for order #ORD-12347: Insufficient funds
+2026-06-28 10:15:31.890 INFO [user-service] [http-nio-8080-exec-7] --- Cache hit for key 'user_456' - Response time 2ms
+2026-06-28 10:15:32.123 DEBUG [product-service] [http-nio-8080-exec-8] --- Fetching product catalog from database: 234 items retrieved
+2026-06-28 10:15:33.456 INFO [order-service] [http-nio-8080-exec-9] --- Order #ORD-12348 status updated: PENDING → CONFIRMED
+2026-06-28 10:15:34.789 ERROR [database] [connection-pool] --- Connection pool exhausted. Active connections: 50, Max: 50
+2026-06-28 10:15:35.012 WARN [system] [health-check] --- Memory usage: 85%, Disk usage: 72%, CPU: 64%
+2026-06-28 10:15:36.345 INFO [notification-service] [http-nio-8080-exec-10] --- SMS notification sent to +1-555-123-4567
+2026-06-28 10:15:37.678 DEBUG [cache] [ehcache-manager] --- Cache statistics: Hits=1245, Misses=89, Evictions=12
+2026-06-28 10:15:38.901 ERROR [auth-service] [http-nio-8080-exec-11] --- Multiple failed login attempts detected for IP 203.45.67.89
+2026-06-28 10:15:39.234 INFO [api-gateway] [reactor-http-epoll-2] --- Request processed: POST /api/v1/orders - Status: 201 - Duration: 234ms
+2026-06-28 10:15:40.567 WARN [security] [http-nio-8080-exec-12] --- CSRF token validation failed for request /api/settings
+2026-06-28 10:15:41.890 INFO [user-service] [async-task-1] --- User avatar uploaded: 2.4MB - Storage used: 45.6GB/100GB
+2026-06-28 10:15:42.123 DEBUG [order-service] [http-nio-8080-exec-13] --- Discount calculation applied: 15% off - Total: $127.50
+2026-06-28 10:15:43.456 ERROR [product-service] [http-nio-8080-exec-14] --- Product ID 'PROD-999' not found in database
