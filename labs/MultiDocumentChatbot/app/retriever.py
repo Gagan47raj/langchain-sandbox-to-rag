@@ -1,3 +1,6 @@
+from app import settings
+
+
 def get_retriever(
 
     vector_db,
@@ -8,11 +11,11 @@ def get_retriever(
 
     return vector_db.as_retriever(
 
-        search_type="similarity",
+        search_type=settings.search_type,
 
         search_kwargs={
 
-            "k":k
+            "k":settings.top_k
 
         }
 
