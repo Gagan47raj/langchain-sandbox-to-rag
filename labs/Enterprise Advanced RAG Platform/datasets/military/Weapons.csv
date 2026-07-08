@@ -1,0 +1,16 @@
+Weapon_ID,Weapon_Name,Category,Caliber,Fire_Mode,Mag_Size,Effective_Range_Meters,Attachment_Slots,Base_Damage,Recoil_Rating,Unlock_Level,Camo_Progress
+WPN-001,M4A1,Assault Rifle,5.56x45mm,Full-Auto/Semi,30,500,5,42,Low,1,78%
+WPN-002,AK-47,Assault Rifle,7.62x39mm,Full-Auto/Semi,30,450,5,48,Medium-High,7,45%
+WPN-003,MP5,SMG,9x19mm,Full-Auto/Semi,30,250,5,34,Low,4,92%
+WPN-004,AX-50,Sniper Rifle,.50 BMG,Bolt-Action,5,1500,5,112,Very High,55,60%
+WPN-005,680 Shotgun,Shotgun,12 Gauge,Pump-Action,6,40,4,200,Burst,15,33%
+WPN-006,Desert Eagle,Pistol,.50 AE,Semi-Auto,7,150,3,65,Very High,36,88%
+WPN-007,PKM,LMG,7.62x54mmR,Full-Auto,100,800,4,38,High,22,15%
+WPN-008,JOKR,Launcher,127mm,Lock-On,1,2500,1,Max,None,44,100%
+WPN-009,Combat Knife,Melee,N/A,N/A,N/A,2,N/A,Instant,N/A,1,100%
+WPN-010,HDR,Sniper Rifle,12.7x108mm,Bolt-Action,5,1800,5,120,Very High,48,71%
+WPN-011,M13,Assault Rifle,.300 Blackout,Full-Auto/Semi,30,550,5,38,Very Low,24,54%
+WPN-012,RPG-7,Launcher,40mm,Single-Shot,1,400,1,Max,None,1,5%
+WPN-013,.357 Magnum,Pistol,.357 Magnum,Semi-Auto,6,200,4,70,High,28,41%
+WPN-014,P90,SMG,5.7x28mm,Full-Auto/Semi,50,275,5,28,Low-Medium,18,19%
+WPN-015,EBR-14,Marksman Rifle,7.62x51mm,Semi-Auto,10,700,5,55,Medium-High,32,67%

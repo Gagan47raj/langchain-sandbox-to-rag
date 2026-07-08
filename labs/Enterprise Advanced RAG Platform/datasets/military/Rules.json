@@ -1,0 +1,118 @@
+{
+  "rules_of_engagement": {
+    "multiplayer_combat_directives": {
+      "team_killing": {
+        "status": "DISABLED_HARDCORE_EXCEPTION",
+        "penalty": "IMMEDIATE_KICK_AFTER_3_OFFENSES",
+        "forgiveness": true,
+        "forgive_window_seconds": 15
+      },
+      "spawn_protection": {
+        "duration_seconds": 3,
+        "cancelled_on_action": true,
+        "grace_period_after_respawn": true
+      },
+      "objective_play": {
+        "required_engagement": true,
+        "afk_timeout_seconds": 120,
+        "camper_detection": {
+          "enabled": true,
+          "stationary_threshold_seconds": 45,
+          "small_zone_radius_meters": 15,
+          "warning_before_exposure_seconds": 10
+        }
+      }
+    },
+    "communication_policy": {
+      "voice_chat": {
+        "enabled": true,
+        "push_to_talk_default": true,
+        "proximity_chat_enabled": true,
+        "proximity_radius_meters": 30,
+        "toxic_behavior": {
+          "auto_moderation_enabled": true,
+          "slurs": "INSTANT_MUTE",
+          "excessive_screaming": "VOLUME_NORMALIZATION_APPLIED",
+          "harassment_reports": "REVIEWED_WITHIN_24_HOURS"
+        }
+      },
+      "text_chat": {
+        "enabled": true,
+        "profanity_filter": "MATURE_AUDIENCE_OFF",
+        "spam_protection": {
+          "message_cooldown_seconds": 3,
+          "repeat_message_threshold": 5
+        }
+      }
+    },
+    "weapon_regulations": {
+      "banned_attachments": [],
+      "restricted_attachments": [
+        "NOOB_TUBE_GRENADE_LAUNCHER",
+        "THERMAL_SCOPE_SMOKE_COMBO"
+      ],
+      "damage_balancing": {
+        "headshot_multiplier": 1.5,
+        "limb_damage_reduction": 0.7,
+        "armor_plate_damage_absorption_percent": 35,
+        "health_regeneration_delay_seconds": 5,
+        "health_regeneration_rate_per_second": 15
+      }
+    },
+    "killstreak_policy": {
+      "stacking": false,
+      "loopable_on_max": true,
+      "care_package_sharing": "TEAM_ONLY",
+      "killstreak_vehicle_abandonment": "FREE_USE_BY_ANY_PLAYER",
+      "team_kill_with_killstreak": "OPERATOR_CONTROLLED_KILLSTREAKS_DISABLED_ON_3RD_TEAM_KILL"
+    },
+    "competitive_ruleset_cdl": {
+      "allowed_weapons": [
+        "M4A1",
+        "TAQ-56",
+        "VEL_46",
+        "PDSW_528",
+        "SP-X_80"
+      ],
+      "banned_perks": [
+        "GHOST",
+        "TRACKER",
+        "HIGH_ALERT",
+        "SURVIVOR"
+      ],
+      "banned_equipment": [
+        "CLAYMORE",
+        "PROXIMITY_MINE",
+        "TACTICAL_INSERTION",
+        "HEARTBEAT_SENSOR"
+      ],
+      "map_veto_system": {
+        "enabled": true,
+        "veto_pool_size": 5,
+        "veto_count_per_team": 2,
+        "final_map_played": true
+      },
+      "overtime_rules": {
+        "capture_the_flag": "SUDDEN_DEATH_SINGLE_CAP",
+        "search_and_destroy": "BEST_OF_11_AFTER_5-5",
+        "hardpoint": "ROTATION_CONTINUES_UNTIL_WINNER"
+      }
+    },
+    "honor_code_unwritten": [
+      "No camping the spawn point. We all hate it.",
+      "If someone gets a quad-feed, let them have their moment in killcam.",
+      "Don't steal executions. That's sacred.",
+      "When the lobby votes for Rust, we play Rust. No complaints.",
+      "Teabagging is a right, not a privilege. But don't start it if you can't take it.",
+      "The riot shield player on your team is trying their best.",
+      "Quick-scoping is annoying but technically impressive. Grudging respect.",
+      "If you hear an enemy wheelson, run. Just run."
+    ]
+  },
+  "server_authority": {
+    "anti_cheat": "ACTIVE_KERNEL_LEVEL",
+    "false_positive_appeal_url": "https://ban-appeal.actvision.internal/",
+    "cheater_quarantine": "SUSPECTED_CHEATERS_MATCHED_TOGETHER",
+    "spectator_review_tool": "ENABLED_FOR_TRUSTED_USERS"
+  }
+}
