@@ -1,0 +1,25 @@
+
+Doc 1:
+Python is a great programming language
+for AI and machine learning.
+
+Doc 2:
+The python is a large snake
+native to tropical regions.
+
+Doc 3:
+The company reported
+a 20% increase in revenue.
+
+Doc 4:
+To learn Python,
+start with basic syntax
+and loops.
+
+Doc 5:
+Machine learning models
+require clean data.
+
+Doc 6:
+I saw a huge python
+in the zoo yesterday.
